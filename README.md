@@ -1,8 +1,5 @@
-a.  Name - Udiksha Singh (ufid: 3393-7215)
 
-b.  Level - Graduate
-
-c.  Program Description - 
+a.  Program Description - 
 This program pulls its data from coronoaviris-tracker-api (https://coronavirus-tracker-api.herokuapp.com/)
 The program provides following features to its users:
     1. User can query the total number of confirmed cases, deaths and recovered cases due to COVID-19. A dedicated intent in Google's dialogflow is mapped with the request, which then calls the tracker API (using 'jhu' source).
@@ -14,20 +11,21 @@ The program provides following features to its users:
     3. User can query the number of confirmed cases, deaths and recovered cases due to COVID-19 in a given time period.
     The program uses '@sys.date-period' to parse timeline-based queries and get a beginning date and an end date. After calling the tracker API, with the 'timelines' parameter set to true, number of case at the beginning date and at the end date is extracted from the response body. The difference in the value of these 2 data is returned as the result.
 
-d.  Tools used to develop
+b.  Tools used to develop
     1. Google Dialogflow (for Natural Language Processing)
     2. Unity 2019.3.10f1 Personal (for the designing of the interface)
     3. https://www.mixamo.com/ (for creating the avatar for the interface)
     4. Windows 10 (OS)
 
-e.  Dependencies
+c.  Dependencies
     1. firebase-functions - for debugging logs
     2. bent (javascript module) - for the HTTP client to call the coronoaviris-tracker-api
     3. moment (javascript module) - to parse date-based strings(in timeline-based queries)
 
-f.  How to compile 
+d.  How to compile.  - 
     The project is already built. 
     
-g.  To run the application, goto COVID_Agent->Covid19Tracker->Covid19Tracker->Build, and run  Covid19Tracker.exe      
+e.  To run the application. 
+    goto COVID_Agent->Covid19Tracker->Covid19Tracker->Build, and run  Covid19Tracker.exe      
 
 
